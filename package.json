@@ -1,10 +1,15 @@
 {
    "name": "natours",
    "version": "1.0.0",
-   "description": "SASS project one",
+   "description": "SASS - NATOURS",
    "main": "index.js",
    "scripts": {
-      "compile:sass": "sass --no-source-map sass/main.scss css/style.css -w"
+      "start": "npm run sass:compile && npx live-server",
+      "sass:style": "sass --no-source-map sass/main.scss css/style.css",
+      "sass:icons": "sass --no-source-map sass/abstracts/_icons.scss css/icons.css",
+      "sass:compile": "npm run sass:style && npm run sass:icons",
+      "live-server": "npx live-server",
+      "live-server:force": "npx live-server --host=0.0.0.0 --host=8080 --wait=1000"
    },
    "author": "Ali36Saadat",
    "license": "ISC",
@@ -12,6 +17,7 @@
       "sass": "^1.77.8"
    },
    "dependencies": {
-      "live-server": "^1.2.2"
+      "live-server": "^1.2.2",
+      "npx": "^10.2.2"
    }
 }
