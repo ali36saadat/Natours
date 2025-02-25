@@ -1,7 +1,7 @@
 ## Sass Project - NATOURS
 ![NATOURS - Headder](https://github.com/user-attachments/assets/3c5be37c-af2e-4df5-9f5f-730bdff19ba4)
 
-## Work With ( Scss )
+## Work With ( Sass )
 1. PURE POPUP CSS
 2. BACKGROUND VIDEO
 3. ANIMATIONS
